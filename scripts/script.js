@@ -4,13 +4,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // TODO
   
   // Create fetch request to: https://fakestoreapi.com/products
+  var response;
   fetch('https://fakestoreapi.com/products')
-  .then(function() {
-  
-  })
-  .catch(function() {
-    
-  });
+  .then(response => response.json())
+  .then(response => console.log(response));
+
   
   myStorage = window.localStorage;
   
